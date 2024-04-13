@@ -1,8 +1,9 @@
 import { ITheme } from "@/common/theme";
+import { Text } from "@/components/Text";
 import { UserCard } from "@/components/UserCard";
 import { getAllUsersService } from "@/services/users/getAllUsersService";
 import { useQuery } from "@tanstack/react-query";
-import { ScrollView, Text } from "react-native";
+import { ScrollView } from "react-native";
 import { useTheme } from "styled-components";
 
 export const HomeScreen = () => {
@@ -20,11 +21,13 @@ export const HomeScreen = () => {
         gap: spacing.gaps.large,
       }}
     >
-      <Text style>List of Users</Text>
+      <Text size={"extraLarge"} family={"bold"} color={"primary"}>
+        List of Users
+      </Text>
 
-      <UserCard />
-      <UserCard />
-      <UserCard />
+      {users.map((user) => (
+        <UserCard key={user._id} user={user} />
+      ))}
     </ScrollView>
   );
 };

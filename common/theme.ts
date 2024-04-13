@@ -43,8 +43,8 @@ export const theme: ITheme = {
     backdrop: "#f9fafb",
     primary: "#238bfd",
     texts: {
-      primary: "#FFF",
-      secondary: "#808080",
+      primary: "#35404f",
+      secondary: "#5c6a7d",
     },
   },
   fonts: {
