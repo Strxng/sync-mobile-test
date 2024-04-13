@@ -30,7 +30,7 @@ export const DetailsScreen = () => {
 
         <S.InterestSection>
           {user.interest.map((interest: string) => (
-            <S.InterestContainer>
+            <S.InterestContainer key={interest}>
               <Text size={"medium"} family={"bold"} color={"secondary"}>
                 {interest}
               </Text>
