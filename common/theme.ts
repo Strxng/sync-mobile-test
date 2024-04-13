@@ -17,6 +17,10 @@ export interface ITheme {
     };
     gaps: {
       large: number;
+      medium: number;
+    };
+    margins: {
+      large: number;
     };
   };
   sizes: {
@@ -59,6 +63,10 @@ export const theme: ITheme = {
       large: 20,
     },
     gaps: {
+      large: 20,
+      medium: 10,
+    },
+    margins: {
       large: 20,
     },
   },

@@ -6,11 +6,12 @@ import { Text } from "../Text";
 
 interface IUserCardProps {
   user: IUser;
+  onPress: () => void;
 }
 
-export const UserCard = ({ user }: IUserCardProps) => {
+export const UserCard = ({ user, onPress }: IUserCardProps) => {
   return (
-    <S.Container>
+    <S.Container onPress={onPress}>
       <S.Row>
         <S.Avatar />
 

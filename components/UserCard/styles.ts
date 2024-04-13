@@ -1,7 +1,7 @@
 import { ITheme } from "@/common/theme";
 import styled from "styled-components/native";
 
-export const Container = styled.View<{ theme: ITheme }>`
+export const Container = styled.TouchableOpacity<{ theme: ITheme }>`
   padding: ${({ theme }) => theme.spacing.paddings.large}px;
   background-color: ${({ theme }) => theme.colors.backdrop};
   border-radius: 20px;

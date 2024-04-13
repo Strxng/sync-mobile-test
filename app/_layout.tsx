@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-
+import { useEffect } from "react";
 import { Stack } from "expo-router";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/configs/reactQuery";
@@ -44,7 +43,7 @@ const RootLayoutNav = () => {
       }}
     >
       <Stack.Screen name="home" options={{ title: "Users" }} />
-      <Stack.Screen name="details" options={{ title: "" }} />
+      <Stack.Screen name="details/[user]" options={{ title: "" }} />
     </Stack>
   );
 };
