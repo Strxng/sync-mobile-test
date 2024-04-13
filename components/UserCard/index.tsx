@@ -1,8 +1,7 @@
 import { IUser } from "@/interfaces/user";
-import { View } from "react-native";
+import { Text } from "../Text";
 
 import * as S from "./styles";
-import { Text } from "../Text";
 
 interface IUserCardProps {
   user: IUser;

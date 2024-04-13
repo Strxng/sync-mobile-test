@@ -1,11 +1,11 @@
 import { ITheme } from "@/common/theme";
-import { ScrollView, View } from "react-native";
+import { ScrollView } from "react-native";
 import { useTheme } from "styled-components";
-
-import * as S from "./styles";
 import { Text } from "@/components/Text";
 import { useLocalSearchParams } from "expo-router";
 import { IUser } from "@/interfaces/user";
+
+import * as S from "./styles";
 
 export const DetailsScreen = () => {
   const { spacing } = useTheme() as ITheme;
